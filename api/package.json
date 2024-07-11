@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch --env-file .env src/server.ts"
+    "dev": "tsx watch --env-file .env src/server.ts",
+    "lint": "eslint src --ext .ts --fix"
   },
   "keywords": [],
   "author": "Diego Ferreira L.G.Oliveira",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^20.14.10",
     "@types/nodemailer": "^6.4.15",
+    "eslint": "^8.57.0",
     "prisma": "^5.16.1",
     "tsx": "^4.16.2",
     "typescript": "^5.5.3"
